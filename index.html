@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Vuong Mieu Nhu | Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -20,107 +24,135 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#ffffff;
-color:#1f2937;
-line-height:1.7;
+background:#FFFFFF;
+color:#2C2C2C;
+line-height:1.8;
 }
 
 nav{
+
 position:fixed;
 top:0;
 left:0;
 width:100%;
+
 background:#0B3B6E;
-padding:18px 8%;
+
+padding:20px 8%;
+
 display:flex;
+
 justify-content:space-between;
+
 align-items:center;
+
 z-index:999;
-box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
 }
 
 .logo{
-color:white;
-font-size:24px;
+
+font-size:22px;
+
 font-weight:700;
-letter-spacing:1px;
+
+color:white;
+
+letter-spacing:2px;
+
 }
 
 nav ul{
+
 display:flex;
-gap:35px;
+
 list-style:none;
+
+gap:35px;
+
 }
 
 nav a{
-color:white;
+
 text-decoration:none;
+
+color:white;
+
 font-weight:500;
+
 transition:.3s;
+
 }
 
 nav a:hover{
-color:#A9D6FF;
+
+color:#CFE6FF;
+
 }
 
 header{
 
-padding-top:140px;
-padding-bottom:90px;
-background:linear-gradient(180deg,#ffffff,#F5F9FD);
+padding:180px 10% 130px;
 
 text-align:center;
 
+background:linear-gradient(180deg,#FFFFFF,#F6FAFF);
+
 }
 
-.profile{
+.hero-tag{
 
-width:220px;
-height:220px;
+display:inline-block;
 
-border-radius:50%;
+padding:8px 20px;
 
-object-fit:cover;
+border-radius:50px;
 
-border:8px solid white;
+background:#EAF3FF;
 
-box-shadow:0 20px 45px rgba(0,0,0,.15);
+color:#0B3B6E;
+
+font-weight:600;
+
+margin-bottom:30px;
+
+font-size:14px;
+
+letter-spacing:1px;
 
 }
 
 h1{
 
-margin-top:30px;
-
-font-size:52px;
+font-size:60px;
 
 color:#0B3B6E;
+
+font-weight:700;
+
+margin-bottom:15px;
 
 }
 
 .subtitle{
 
-margin-top:12px;
+font-size:24px;
 
-font-size:22px;
+color:#4B5563;
 
 font-weight:500;
 
-color:#555;
+margin-bottom:18px;
 
 }
 
 .description{
 
-margin-top:20px;
+max-width:850px;
 
-max-width:780px;
-
-margin-left:auto;
-
-margin-right:auto;
-
-padding:0 20px;
+margin:auto;
 
 font-size:18px;
 
@@ -130,7 +162,7 @@ color:#666;
 
 .buttons{
 
-margin-top:40px;
+margin-top:50px;
 
 display:flex;
 
@@ -148,7 +180,7 @@ background:#0B3B6E;
 
 color:white;
 
-padding:15px 34px;
+padding:16px 36px;
 
 border-radius:50px;
 
@@ -156,7 +188,7 @@ text-decoration:none;
 
 font-weight:600;
 
-transition:.35s;
+transition:.3s;
 
 }
 
@@ -164,19 +196,19 @@ transition:.35s;
 
 background:#174D86;
 
-transform:translateY(-4px);
+transform:translateY(-3px);
 
 }
 
-.btn2{
+.btn-outline{
 
 background:white;
 
-color:#0B3B6E;
-
 border:2px solid #0B3B6E;
 
-padding:15px 34px;
+color:#0B3B6E;
+
+padding:16px 36px;
 
 border-radius:50px;
 
@@ -184,11 +216,11 @@ text-decoration:none;
 
 font-weight:600;
 
-transition:.35s;
+transition:.3s;
 
 }
 
-.btn2:hover{
+.btn-outline:hover{
 
 background:#0B3B6E;
 
@@ -204,13 +236,13 @@ padding:90px 10%;
 
 .section-title{
 
-font-size:34px;
+text-align:center;
+
+font-size:36px;
 
 color:#0B3B6E;
 
-margin-bottom:40px;
-
-text-align:center;
+margin-bottom:45px;
 
 }
 
@@ -220,9 +252,9 @@ background:white;
 
 padding:35px;
 
-border-radius:22px;
+border-radius:18px;
 
-box-shadow:0 10px 35px rgba(0,0,0,.08);
+box-shadow:0 12px 35px rgba(0,0,0,.08);
 
 margin-bottom:30px;
 
@@ -232,7 +264,7 @@ transition:.3s;
 
 .card:hover{
 
-transform:translateY(-8px);
+transform:translateY(-6px);
 
 }
 
@@ -258,7 +290,7 @@ gap:15px;
 
 nav ul{
 
-gap:15px;
+gap:18px;
 
 flex-wrap:wrap;
 
@@ -268,21 +300,19 @@ justify-content:center;
 
 h1{
 
-font-size:38px;
-
-}
-
-.profile{
-
-width:170px;
-
-height:170px;
+font-size:40px;
 
 }
 
 .subtitle{
 
-font-size:18px;
+font-size:19px;
+
+}
+
+.description{
+
+font-size:16px;
 
 }
 
@@ -320,27 +350,27 @@ VMN
 
 <header>
 
-<img src="profile.jpg" class="profile">
+<div class="hero-tag">
 
-<h1>VUONG MIEU NHU</h1>
+MASTER OF BUSINESS | AUT
+
+</div>
+
+<h1>
+
+VUONG MIEU NHU
+
+</h1>
 
 <p class="subtitle">
 
-Lucia
-
-</p>
-
-<p class="subtitle">
-
-Master of Business | Auckland University of Technology
+Business Operations • Administration • Procurement • Customer Experience
 
 </p>
 
 <p class="description">
 
-Business professional with experience in Operations, Procurement,
-Administration and Customer Service. Passionate about continuous
-improvement, teamwork and delivering high-quality customer experiences.
+Business professional with over five years of experience supporting business operations, procurement, administration, and customer service across multicultural environments. Currently pursuing a Master of Business at Auckland University of Technology (AUT), with a strong interest in operational excellence, continuous improvement, and delivering exceptional customer experiences.
 
 </p>
 
@@ -350,21 +380,21 @@ improvement, teamwork and delivering high-quality customer experiences.
 href="Vuong_Mieu_Nhu_CV.pdf"
 target="_blank">
 
-📄 Download Resume
+Download Resume
 
 </a>
 
-<a class="btn2"
-href="mailto:your@email.com">
+<a class="btn-outline"
+href="mailto:mieunhuv@gmail.com">
 
-✉ Contact Me
+Contact Me
 
 </a>
 
 </div>
 
 </header>
-  <!-- ================= ABOUT ================= -->
+<!-- ================= ABOUT ================= -->
 
 <section id="about">
 
@@ -374,7 +404,7 @@ href="mailto:your@email.com">
 
 <p>
 
-I am currently pursuing a <strong>Master of Business</strong> at Auckland University of Technology (AUT), New Zealand, with over five years of professional experience in operations, procurement, administration, and customer service.
+I am currently pursuing a <strong>Master of Business</strong> at Auckland University of Technology (AUT), New Zealand. With more than five years of professional experience, I have developed strong capabilities in business operations, procurement, administration, and customer service.
 
 </p>
 
@@ -382,7 +412,7 @@ I am currently pursuing a <strong>Master of Business</strong> at Auckland Univer
 
 <p>
 
-My experience includes supplier coordination, logistics support, process improvement, and delivering excellent customer service within multicultural environments. I enjoy building efficient processes, solving operational challenges, and supporting business growth through collaboration and continuous improvement.
+Throughout my career, I have supported daily business operations, coordinated suppliers, managed documentation, and worked collaboratively with internal teams and external stakeholders. I am passionate about improving operational efficiency, maintaining high standards of service, and contributing to positive business outcomes.
 
 </p>
 
@@ -390,7 +420,7 @@ My experience includes supplier coordination, logistics support, process improve
 
 <p>
 
-I am seeking opportunities where I can contribute my organisational skills, professionalism, and strong work ethic while continuing to develop my career in New Zealand.
+I am currently seeking opportunities in operations, administration, procurement, or business support where I can continue developing my professional career while adding value to an organisation.
 
 </p>
 
@@ -412,17 +442,11 @@ I am seeking opportunities where I can contribute my organisational skills, prof
 Master of Business
 </h3>
 
-<p>
+<p><strong>Auckland University of Technology (AUT)</strong></p>
 
-Auckland University of Technology (AUT)
+<p>Auckland, New Zealand</p>
 
-</p>
-
-<p>
-
-Expected Completion: 2027
-
-</p>
+<p>Expected Completion: February 2027</p>
 
 </div>
 
@@ -432,19 +456,11 @@ Expected Completion: 2027
 Bachelor of Business Studies (Management)
 </h3>
 
-<p>
+<p><strong>University College Dublin</strong></p>
 
-University College Dublin
+<p>Singapore Campus</p>
 
-(Singapore Campus)
-
-</p>
-
-<p>
-
-Completed 2019
-
-</p>
+<p>Graduated</p>
 
 </div>
 
@@ -454,17 +470,9 @@ Completed 2019
 Diploma in Commerce
 </h3>
 
-<p>
+<p><strong>Kaplan Higher Education Academy</strong></p>
 
-Kaplan Singapore
-
-</p>
-
-<p>
-
-Business Administration
-
-</p>
+<p>Singapore</p>
 
 </div>
 
@@ -476,31 +484,17 @@ Business Administration
 
 <section id="experience">
 
-<h2 class="section-title">
-
-Professional Experience
-
-</h2>
+<h2 class="section-title">Professional Experience</h2>
 
 <div class="card">
 
 <h3 style="color:#0B3B6E;">
-
 Operations & Procurement Coordinator
-
 </h3>
 
-<p>
+<p><strong>ATL Vietnam</strong></p>
 
-ATL Vietnam
-
-</p>
-
-<p>
-
-2019 – 2025
-
-</p>
+<p>2019 – 2025</p>
 
 <br>
 
@@ -508,15 +502,15 @@ ATL Vietnam
 
 <li>Coordinated procurement activities and supplier communications.</li>
 
-<li>Managed purchase orders and operational documentation.</li>
+<li>Prepared purchase orders and maintained procurement records.</li>
 
-<li>Tracked logistics, courier services, and shipment performance.</li>
+<li>Managed operational documentation and business reports.</li>
 
-<li>Maintained accurate business records and reports.</li>
+<li>Monitored deliveries and coordinated logistics activities.</li>
 
-<li>Supported process improvements to increase operational efficiency.</li>
+<li>Supported process improvements to enhance operational efficiency.</li>
 
-<li>Worked closely with international suppliers and stakeholders.</li>
+<li>Collaborated with internal departments and international suppliers.</li>
 
 </ul>
 
@@ -525,49 +519,35 @@ ATL Vietnam
 <div class="card">
 
 <h3 style="color:#0B3B6E;">
-
-Front of House Staff
-
+Front of House Team Member
 </h3>
 
-<p>
+<p><strong>Manaia Seafood Boil</strong></p>
 
-Manaia Seafood Boil Ltd.
+<p>Auckland, New Zealand</p>
 
-</p>
-
-<p>
-
-Auckland, New Zealand
-
-</p>
-
-<p>
-
-Present
-
-</p>
+<p>Present</p>
 
 <br>
 
 <ul>
 
-<li>Provided excellent customer service in a fast-paced hospitality environment.</li>
+<li>Delivered excellent customer service in a fast-paced hospitality environment.</li>
 
-<li>Processed POS transactions and customer orders.</li>
+<li>Handled POS transactions accurately and efficiently.</li>
 
-<li>Prepared beverages and supported food service.</li>
+<li>Assisted with food and beverage service while maintaining quality standards.</li>
 
-<li>Built positive relationships with customers from diverse backgrounds.</li>
+<li>Worked collaboratively with team members to ensure smooth daily operations.</li>
 
-<li>Worked collaboratively to ensure smooth daily operations.</li>
+<li>Built positive relationships with customers from diverse cultural backgrounds.</li>
 
 </ul>
 
 </div>
 
 </section>
-  <!-- ================= SKILLS ================= -->
+<!-- ================= SKILLS ================= -->
 
 <section id="skills">
 
@@ -577,52 +557,57 @@ Present
 
 <div class="card">
 
-<h3 style="color:#0B3B6E;">Professional Skills</h3>
+<h3 style="color:#0B3B6E;">Customer Excellence</h3>
 
 <ul>
-
-<li>Operations Coordination</li>
-
-<li>Procurement & Purchasing</li>
-
-<li>Administration</li>
-
-<li>Customer Service</li>
-
-<li>Supplier Relationship Management</li>
-
-<li>Process Improvement</li>
-
-<li>Problem Solving</li>
-
-<li>Time Management</li>
-
-<li>Communication</li>
-
-<li>Team Collaboration</li>
-
+<li>Professional communication</li>
+<li>Customer service</li>
+<li>Handling customer enquiries</li>
+<li>Building customer rapport</li>
 </ul>
 
 </div>
 
 <div class="card">
 
-<h3 style="color:#0B3B6E;">Technical Skills</h3>
+<h3 style="color:#0B3B6E;">Operations & Administration</h3>
 
 <ul>
+<li>Supplier Coordination</li>
+<li>Procurement Support</li>
+<li>Document Management</li>
+<li>Record Keeping</li>
+<li>Process Optimisation</li>
+</ul>
 
-<li>Microsoft Office (Word, Excel, PowerPoint)</li>
+</div>
 
+<div class="card">
+
+<h3 style="color:#0B3B6E;">Software</h3>
+
+<ul>
+<li>Microsoft Word</li>
+<li>Microsoft Excel</li>
+<li>Microsoft PowerPoint</li>
+<li>Microsoft Outlook</li>
 <li>Google Workspace</li>
-
 <li>Canva</li>
+</ul>
 
-<li>SAP (Basic)</li>
+</div>
 
-<li>CRM Systems</li>
+<div class="card">
 
-<li>Data Entry & Reporting</li>
+<h3 style="color:#0B3B6E;">Professional Strengths</h3>
 
+<ul>
+<li>Communication</li>
+<li>Problem Solving</li>
+<li>Time Management</li>
+<li>Attention to Detail</li>
+<li>Team Collaboration</li>
+<li>Adaptability</li>
 </ul>
 
 </div>
@@ -633,7 +618,7 @@ Present
 
 <!-- ================= LANGUAGES ================= -->
 
-<section>
+<section id="languages">
 
 <h2 class="section-title">Languages</h2>
 
@@ -643,7 +628,7 @@ Present
 
 <h3 style="color:#0B3B6E;">English</h3>
 
-<p>Professional Working Proficiency</p>
+<p>Fluent</p>
 
 </div>
 
@@ -651,7 +636,23 @@ Present
 
 <h3 style="color:#0B3B6E;">Vietnamese</h3>
 
-<p>Native</p>
+<p>Fluent</p>
+
+</div>
+
+<div class="card">
+
+<h3 style="color:#0B3B6E;">Mandarin</h3>
+
+<p>Working Proficiency</p>
+
+</div>
+
+<div class="card">
+
+<h3 style="color:#0B3B6E;">Cantonese</h3>
+
+<p>Working Proficiency</p>
 
 </div>
 
@@ -667,42 +668,33 @@ Present
 
 <div class="card" style="text-align:center;">
 
-<h3 style="color:#0B3B6E;margin-bottom:20px;">
-
-Let's Connect
-
-</h3>
-
-<p>
-
-📧 mieunhuv@gmail.com
-
-</p>
+<h3 style="color:#0B3B6E;">Let's Connect</h3>
 
 <br>
 
-<p>
+<p><strong>Email</strong></p>
 
-📍 Auckland, New Zealand
+<p>mieunhuv@gmail.com</p>
 
-</p>
+<br>
+
+<p><strong>Location</strong></p>
+
+<p>Auckland, New Zealand</p>
 
 <br>
 
 <div class="buttons">
 
 <a class="btn"
-
 href="mailto:mieunhuv@gmail.com">
 
 Email Me
 
 </a>
 
-<a class="btn2"
-
+<a class="btn-outline"
 href="Vuong_Mieu_Nhu_CV.pdf"
-
 target="_blank">
 
 Download Resume
@@ -717,30 +709,20 @@ Download Resume
 
 <!-- ================= FOOTER ================= -->
 
-<footer style="background:#0B3B6E;color:white;text-align:center;padding:40px 20px;">
+<footer style="background:#0B3B6E;color:white;text-align:center;padding:45px 20px;">
 
-<h3>
-
-VUONG MIEU NHU
-
-</h3>
+<h3>VUONG MIEU NHU</h3>
 
 <p style="margin-top:10px;">
-
 Master of Business | Auckland University of Technology
-
 </p>
 
 <p style="margin-top:10px;">
-
-Operations | Procurement | Administration | Customer Service
-
+Business Operations • Administration • Procurement • Customer Experience
 </p>
 
 <p style="margin-top:25px;font-size:14px;opacity:.8;">
-
 © 2026 Vuong Mieu Nhu. All Rights Reserved.
-
 </p>
 
 </footer>
