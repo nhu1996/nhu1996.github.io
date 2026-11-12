@@ -317,7 +317,39 @@ font-size:16px;
 }
 
 }
+/* ===== EXPERIENCE WITH CUSTOMER RECOGNITION ===== */
 
+.experience-with-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.experience-with-image .card {
+    margin-bottom: 0;
+}
+
+.recognition-visual {
+    background: #FFFFFF;
+    padding: 12px;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(0,0,0,.08);
+}
+
+.recognition-visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .experience-with-image {
+        grid-template-columns: 1fr;
+    }
+}
 </style>
 
 </head>
@@ -460,7 +492,8 @@ Bachelor of Business Studies (Management)
 <div class="card">
 
 <h3 style="color:#0B3B6E;">
-Diploma in Commerce (Business Administration)
+Diploma in Commerce 
+(Business Administration)
 </h3>
 
 <p><strong>Kaplan Higher Education Academy</strong></p>
@@ -508,33 +541,42 @@ Operations & Procurement Coordinator
 
 </div>
 
-<div class="card">
+<div class="experience-with-image">
 
-<h3 style="color:#0B3B6E;">
-Front of House Team Member
-</h3>
+    <div class="card">
 
-<p><strong>Manaia Seafood Boil</strong></p>
+        <h3 style="color:#0B3B6E;">
+            Front of House Team Member
+        </h3>
 
-<p>Auckland, New Zealand</p>
+        <p><strong>Manaia Seafood Eatery</strong></p>
 
-<p>Present</p>
-<br>
-<ul>
-<li>Delivered excellent customer service in a fast-paced hospitality environment.</li>
+        <p>Auckland, New Zealand</p>
 
-<li>Handled POS transactions accurately and efficiently.</li>
+        <p>Present</p>
+         
+        <br>
 
-<li>Assisted with food and beverage service while maintaining quality standards.</li>
+        <ul>
+            <li>Delivered excellent customer service in a fast-paced hospitality environment.</li>
+            <li>Handled POS transactions accurately and efficiently.</li>
+            <li>Assisted with food and beverage service while maintaining quality standards.</li>
+            <li>Worked collaboratively with team members to ensure smooth daily operations.</li>
+            <li>Built positive relationships with customers from diverse cultural backgrounds.</li>
+        </ul>
 
-<li>Worked collaboratively with team members to ensure smooth daily operations.</li>
+    </div>
 
-<li>Built positive relationships with customers from diverse cultural backgrounds.</li>
+    <div class="recognition-visual">
 
-</ul>
+        <img
+            src="Manaia%20Seafood%20Customer%20Recognition%20Highlights.png"
+            alt="Customer Recognition Highlights at Manaia Seafood Eatery"
+        >
+
+    </div>
 
 </div>
-
 </section>
 <!-- ================= Core Competencies ================= -->
 
