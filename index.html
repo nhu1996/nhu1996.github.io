@@ -15,6 +15,62 @@
 
 <style>
 
+/* ===== HERO ACTION BUTTONS ===== */
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 45px;
+}
+
+.hero-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 210px;
+    padding: 16px 30px;
+    border-radius: 50px;
+    background: #0B3B6E;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    border: 2px solid #0B3B6E;
+    transition: all 0.3s ease;
+}
+
+.hero-action-btn:hover {
+    background: #174D86;
+    border-color: #174D86;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(11,59,110,0.18);
+}
+
+.hero-action-btn.secondary {
+    background: #FFFFFF;
+    color: #0B3B6E;
+}
+
+.hero-action-btn.secondary:hover {
+    background: #EAF3FF;
+    color: #0B3B6E;
+    border-color: #0B3B6E;
+}
+
+@media (max-width: 600px) {
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-action-btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
 *{
 margin:0;
 padding:0;
@@ -405,26 +461,23 @@ Business professional with over five years of experience supporting business ope
 
 </p>
 
-<div class="buttons">
 
-<a class="btn"
-href="MIEU NHU VUONG CV.pdf"
-target="_blank">
+<div class="hero-actions">
 
-Download Resume
-    
-</a>
+    <a class="hero-action-btn"
+       href="MIEU NHU VUONG CV.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+       Download Resume
+    </a>
 
-<div class="card" style="text-align:center;">
+    <a class="hero-action-btn secondary"
+       href="mailto:mieunhuv@gmail.com">
+       Email Me
+    </a>
 
-<br>
-
-<p><strong>Email</strong></p>
-
-<p>mieunhuv@gmail.com</p>
-
-<br>
-    
+</div>
+   
 </header>
 <!-- ================= ABOUT ================= -->
 
